@@ -1,0 +1,80 @@
+// Place all the styles related to the main controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.box {
+    min-height: 500px;
+    background-color: rgba(255,255,255,0.78);
+    border: 3px solid #383a3f;
+    padding: 20px;
+}
+.light {
+    background-color: rgba(255,255,255,0.65);
+}
+#headline {
+    color: #a63a21;
+    font-size: 4em;
+    text-shadow: 5px 4px #210803;
+    margin-top: 70px;
+}
+
+#headline2 {
+    color: black;
+    font-size: 5em;
+    text-shadow: 3px 2px #75cdf9;
+}
+
+.pad {padding:20px;}
+
+.shadow {
+    -webkit-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 6px 6px 5px 0px rgba(0,0,0,0.75);
+}
+.text-white {
+    color: white;
+}
+.bg-dkred {
+    background-color: red;
+}
+.bg-dkblue {
+    background-color: #0d1a21;
+}
+.sh-orange {
+    background-color: #a63a21;
+}
+.drop-shadow {
+    text-shadow: 2px 2px #000;
+}
+.dark {
+    background-color: rgba(0,0,0,0.55);
+}
+.truck-orange {
+    background-color: rgb(141, 58, 14);;
+}
+
+#services {
+    margin-top: 50px;
+}
+#contact {
+    margin-top: 50px;
+}
+.img-small {
+    
+}
+.cta {
+    font-size: 4em;
+}
+
+.cta-btn {
+    height: 150px;
+    padding: 25px;
+    // padding-top: 50px;
+    font-size: 2.5em;
+    white-space: normal;
+    margin: 10px;
+}
+
+#btn-text {
+    margin-right: 50px;
+}

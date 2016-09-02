@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= page_title("#{params[:controller].capitalize}")%></title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <%= render 'layouts/navbar' %>
+  
+  <div class="container light" id="main-content">
+    <%= render "layouts/alert" if alert.present? %>
+    <%= render "layouts/notice" if notice.present? %>
+    <%= yield %>
+    <a href="tel:+14402252432" class="btn btn-success btn-lg btn-block cta-btn">
+      <span id="btn-text">
+        <%= fa_icon "volume-control-phone", class: "", text: "Click Here to Call Now!" %> 
+      </span>
+    </a>
+  </div>
+</body>
+</html>

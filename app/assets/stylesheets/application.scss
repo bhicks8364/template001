@@ -1,0 +1,58 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ */
+@import 'https://fonts.googleapis.com/css?family=Bungee|Noto+Sans';
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome";
+@import "main";
+@import "navbar";
+.hide { display: hidden;}
+body {
+    font-family: 'Noto Sans', sans-serif;
+    background-color: rgba(0,0,0,0.55);
+     background: url(deep-snow.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    // margin-top: -20px;
+    padding-top: 88px; 
+    
+}
+#main-content {
+    // background-color: rgba(255,255,255,0.55);
+    margin-top: -20px;
+    padding-bottom: 200px; 
+}
+
+h1 {
+     font-family: 'Bungee', cursive;
+}
+.rounded {
+    max-height: 200px;
+    border-radius: 30px;
+    margin: 5px;
+}
+.main-img {
+    background: url(snowplow1.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 800px;
+    // width: 1000px;
+}
+.bg-white {
+    background-color: white;
+}

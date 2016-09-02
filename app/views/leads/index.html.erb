@@ -1,0 +1,30 @@
+<div class="col-md-12 well">
+  <h1>Listing Leads</h1>
+  <%= link_to 'New Lead', new_lead_path, class: "btn btn-success" %>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Phone number</th>
+        <th>Email</th>
+        <th>Comment</th>
+        <th>Ip address</th>
+        <th colspan="2"></th>
+      </tr>
+    </thead>
+  
+    <tbody>
+      <% @leads.each do |lead| %>
+        <tr>
+          <td><%= link_to lead.name, lead %></td>
+          <td><%= lead.phone_number %></td>
+          <td><%= lead.email %></td>
+          <td><%= lead.comment %></td>
+          <td><%= lead.ip_address %></td>
+          <td><%= link_to 'Edit', edit_lead_path(lead) %></td>
+          <td><%= link_to 'Destroy', lead, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,20 @@
+<%= simple_form_for(@lead) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="row">
+    <div class="col-md-6">
+      <%= f.input :name, label_html: { class: 'text-white' } %>
+      <%= f.input :phone_number, label_html: { class: 'text-white' } %>
+      <%= f.input :email, label_html: { class: 'text-white' } %>
+    </div>
+    <div class="col-md-6">
+      <%= f.input :comment, input_html: {rows: 10}, label_html: { class: 'text-white' } %>
+    </div>
+    
+    <%= f.input :ip_address, as: :hidden, input_html: {value: request.remote_ip} %>
+  </div>
+
+  <div class="form-actions text-right">
+    <%= f.button :submit, "Send", class: "btn btn-success btn-lg" %>
+  </div>
+<% end %>
